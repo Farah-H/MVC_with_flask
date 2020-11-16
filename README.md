@@ -25,6 +25,14 @@
 - Ensure flask is installed 
 
 - How to run flask app
+    ```cmd
+    flask run
+    ```
 
-```
-flash 
+** Interacting with HTML**
+- naming conventiontions are essetial 
+- we need to create templates folder in our dir
+- flask looks for templates folder and anything inside the folder 
+- we will create index.html inside our templates folder
+
+# It is more important that you know where each page takes the user, than the syntax. The user needs to see a user  friendly page
