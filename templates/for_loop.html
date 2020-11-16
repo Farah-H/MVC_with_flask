@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html> 
+  
+<html> 
+<head> 
+    <title>For loop in Flask</title> 
+</head> 
+<body> 
+  
+<ol> 
+<!-- For loop logic of jinja template -->
+{%for i in range(0, 10)%} 
+  
+    <li>{{Pokemons[i]}}</li> 
+{%endfor%} 
+  
+</ol> 
+  
+</body> 
+</html> 

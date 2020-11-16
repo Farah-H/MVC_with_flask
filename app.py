@@ -14,9 +14,9 @@ students = [
 def home():
     return "<h1>This is a dream team of DevOps consultants celebrating a WOW moment!!!</h1> "
 
-@app.route("/welcome/")
+@app.route("/welcome/") #localhost:5000/welcome/
 def greet_user():
-    return " <h1>Welcome to DevOps team</h1>"
+    return redirect(for_url('greet_user'))
 
 # This function runs when the URL/API is accessed
 
@@ -43,6 +43,13 @@ def index():
 def child():
     return render_template('index.html')
 
+# @app.route('/child/')
+# def to_ten():
+#     for i in range (10):
+#         return jsonify.i
+@app.route('/loop')
+def for_loop():
+    return redirect(url_for("for_loop"))
 
 
 if __name__ == "__main__":
